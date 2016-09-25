@@ -11,7 +11,6 @@ const helpers = require('./helpers');
  */
 // problem with copy-webpack-plugin
 const HtmlWebpackPlugin = require('html-webpack-plugin');
-const ForkCheckerPlugin = require('awesome-typescript-loader').ForkCheckerPlugin;
 
 /*
  * Webpack Constants
@@ -52,7 +51,7 @@ module.exports = {
    * See: http://webpack.github.io/docs/configuration.html#entry
    */
   entry: {
-    'main': './app/index.ts'
+    'main': './app/app.main.ts'
   },
 
   /*
@@ -169,14 +168,6 @@ module.exports = {
    * See: http://webpack.github.io/docs/configuration.html#plugins
    */
   plugins: [
-
-    /*
-     * Plugin: ForkCheckerPlugin
-     * Description: Do type checking in a separate process, so webpack don't need to wait.
-     *
-     * See: https://github.com/s-panferov/awesome-typescript-loader#forkchecker-boolean-defaultfalse
-     */
-    new ForkCheckerPlugin(),
 
     /*
      * Plugin: OccurenceOrderPlugin
