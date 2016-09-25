@@ -51,7 +51,7 @@ module.exports = {
    * See: http://webpack.github.io/docs/configuration.html#entry
    */
   entry: {
-    'main': './app/app.main.ts'
+    'main': './app/main.ts'
   },
 
   /*
